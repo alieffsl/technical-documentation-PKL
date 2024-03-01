@@ -1,10 +1,10 @@
-    ## Dokumentasi PKL BRIN
+## Dokumentasi PKL BRIN
 
     ---
 
     Dokumentasi ini merupakan laporan yang memuat rangkuman dari berbagai kegiatan yang telah dilakukan dalam pengembangan JetRacer 
 
-    ### Flash JetRacer Pro AI Kit Image
+### Flash JetRacer Pro AI Kit Image
 
     Menggunakan prebuilt image bawaan dari JetRacer yang sudah dilengkapi Ubuntu 18.04 dan Script Jupyter Notebook untuk navigasi sederhana. 
 
@@ -16,11 +16,11 @@
     * Balena Etcher
     * JetRacer image
 
-    ### Setup VNC
+### Setup VNC
 
     Tahapan instalasi mengikuti link berikut: [https://www.youtube.com/watch?v=a3G6r8x_Bbc.](https://www.youtube.com/watch?v=a3G6r8x_Bbc.)
 
-    ### Menjalankan Script Bawaan di Jupyter Notebook
+### Menjalankan Script Bawaan di Jupyter Notebook
 
     Berikut tahapannya: 
 
@@ -29,7 +29,7 @@
     * Pilih notebooks yang tersedia di laman tersebut, program dapat dimodifikasi sesuai keinginan.
     * Jalankan cells.
 
-    ### Set Up ROS Melodic dan Catkin Ws
+### Set Up ROS Melodic dan Catkin Ws
     
     Menggunakan Script untuk menginstall keseluruhan dependensi dari ROS sehingga hanya perlu menjalankan script tersebut. 
     
@@ -37,7 +37,7 @@
     
     Setelah instalasi selesai, diperlukan memeriksa file `**~/.bashrc**` untuk memastikan bahwa `**ROS_MASTER_URI**` dan `**ROS_IP**` telah diatur dengan benar dan sesuai.
     
-    ### Install RPLidar-A1
+### Install RPLidar-A1
     
     Menggunakan prebuilt image bawaan dari JetRacer yang sudah dilengkapi Ubuntu 18.04 dan Script Jupyter Notebook untuk navigasi sederhana. 
     
@@ -45,8 +45,8 @@
     * Jalankan `catkin_make` 
     * Gunakan perintah `roslaunch rplidar_ros rplidar_a1.launch` untuk menjalankan node rplidar
     * Gunakan perintah `roslaunch rplidar_ros view_rplidar_a1.launch` untuk visualisasi di rviz
-    
-    ### Install Hector Slam
+
+### Install Hector Slam
     
     Prerequisites: `Install Qt4`
     
@@ -55,7 +55,7 @@
     * [https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/).
     * [https://github.com/NickL77/RPLidar_Hector_SLAM](https://github.com/NickL77/RPLidar_Hector_SLAM)
     
-    ### Install Arduino Uno
+### Install Arduino Uno
     
     Tahapan Install:
     
@@ -63,7 +63,7 @@
     * Jalankan `catkin_make`
     * Kemudian jalankan script `$ ./installArduinoIDE.sh`
     
-    ### Setup Rosserial
+### Setup Rosserial
     
     Referensi yang digunakan ialah dari [https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup](https://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup). 
     
@@ -75,11 +75,11 @@
     * Kemudian install library **rosserial** pada Arduino IDE
     
     
-    ### Program Teleoprasi Keyboard, Widget, dan Joystick.
+### Program Teleoprasi Keyboard, Widget, dan Joystick.
     
     Menambahkan script teleoprasi IPYNB pada folder JetRacer. Kemudian dijalankan melalui laman jupyter notebook.
     
-    ### Membuat Package ROS 
+### Membuat Package ROS 
     
     Tahapan membuat package ROS sebagai berikut:
     
@@ -92,7 +92,7 @@
     
     Note: Masih terdapat error setiap melakukan catkin\_make, disebabkan package jetracer yang tidak ditemukan, kemungkinan ada kesalahan di konfigurasi CMakelists atau package.xml
     
-    ### Mengolah Data RPLIDAR A1 (Segmentasi 4 Area) 
+### Mengolah Data RPLIDAR A1 (Segmentasi 4 Area) 
     
     Data lidar yang didapatkan kemudian di oleh menjadi 4 area, yaitu _front, back, left and right_
     
