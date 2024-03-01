@@ -1,34 +1,34 @@
-## Dokumentasi PKL BRIN
+    ## Dokumentasi PKL BRIN
 
----
+    ---
 
-Dokumentasi ini merupakan laporan yang memuat rangkuman dari berbagai kegiatan yang telah dilakukan dalam pengembangan JetRacer 
+    Dokumentasi ini merupakan laporan yang memuat rangkuman dari berbagai kegiatan yang telah dilakukan dalam pengembangan JetRacer 
 
-### Flash JetRacer Pro AI Kit Image
+    ### Flash JetRacer Pro AI Kit Image
 
-Menggunakan prebuilt image bawaan dari JetRacer yang sudah dilengkapi Ubuntu 18.04 dan Script Jupyter Notebook untuk navigasi sederhana. 
+    Menggunakan prebuilt image bawaan dari JetRacer yang sudah dilengkapi Ubuntu 18.04 dan Script Jupyter Notebook untuk navigasi sederhana. 
 
-Tahapan instalasi mengikuti link berikut: [https://github.com/laitathei/JetRacer_Pro](https://github.com/laitathei/JetRacer_Pro).
+    Tahapan instalasi mengikuti link berikut: [https://github.com/laitathei/JetRacer_Pro](https://github.com/laitathei/JetRacer_Pro).
 
-Tools: 
+    Tools: 
 
-* SD Card
-* Balena Etcher
-* JetRacer image
+    * SD Card
+    * Balena Etcher
+    * JetRacer image
 
-### Setup VNC
+    ### Setup VNC
 
-Tahapan instalasi mengikuti link berikut: [https://www.youtube.com/watch?v=a3G6r8x_Bbc.](https://www.youtube.com/watch?v=a3G6r8x_Bbc.)
+    Tahapan instalasi mengikuti link berikut: [https://www.youtube.com/watch?v=a3G6r8x_Bbc.](https://www.youtube.com/watch?v=a3G6r8x_Bbc.)
 
-### Menjalankan Script Bawaan di Jupyter Notebook
+    ### Menjalankan Script Bawaan di Jupyter Notebook
 
-Berikut tahapannya: 
+    Berikut tahapannya: 
 
-* Buka laman `http://<jetracer_ip_address>:8888` pada browser.
+    * Buka laman `http://<jetracer_ip_address>:8888` pada browser.
     * Login ke Jupyter Lab menggunakan password `jetson`.
     * Pilih notebooks yang tersedia di laman tersebut, program dapat dimodifikasi sesuai keinginan.
     * Jalankan cells.
-    
+
     ### Set Up ROS Melodic dan Catkin Ws
     
     Menggunakan Script untuk menginstall keseluruhan dependensi dari ROS sehingga hanya perlu menjalankan script tersebut. 
