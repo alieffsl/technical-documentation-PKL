@@ -278,6 +278,14 @@ Penjelasan Struktur Program:
 * Parameter PID (KP, KI, KD) dapat dikonfigurasi untuk menyetel perilaku pengendalian.
 * Istilah integral dan derivatif dihitung untuk meningkatkan kinerja dan stabilitas pengontrol.
 
+### Setup Hokuyo Lidar 
+* Install ROS Driver for HOkuyo : sudo apt-get install ros-<ROS-VERSION>-urg-node
+* Tambahkan ethernet dengan address : 192.168.0.15, netmask : 255.255.255.0, gateway : 192.168.0.1
+* tes di terminal : ping 192.168.0.10
+* jalankan export ROS_MASTER_URI=http://<IP>:11311 ganti ip device kita
+* rosrun urg_node urg_node _ip_address:=192.168.0.10 (default value)
+* RVIZ : rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map laser 10
+
 ### Things to Improve:
 * Menambahkan TTC Braking system.
 * Menggunakan Reactive Methods untuk wall following, kemudian kembangkan ke algortima safety bubble.
